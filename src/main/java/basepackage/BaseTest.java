@@ -37,7 +37,7 @@ public class BaseTest {
 	public BaseTest() {
 		try {
 		prop = new Properties();	
-		file = new FileInputStream("C:\\Users\\shiva\\eclipse-workspace\\Internet\\src\\main\\java\\configurationpackage\\configuration.properties");
+		file = new FileInputStream("{user.dir}\\src\\main\\java\\configurationpackage\\configuration.properties");
 		prop.load(file);
 	 }
 		catch(IOException e) {
