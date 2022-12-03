@@ -1,7 +1,7 @@
 <suite name = "Internet" parallel="tests" >	
       <test name = "RegressionTest" allow-return-values="true"> 
            <classes> 
-                   <class name = "testpackage.LoginPageTest"/>
+                   <class name = "testpackage.JSErrortest"/>
                    <class name = "testpackage.CheckBoxTest"/>
                    <class name= "testpackage.ContextmenuTest"/>
                    <class name = "testpackage.Downloadtest"/>

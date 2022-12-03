@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 02 18:10:54 EST 2022</td>
+<td>Started on:</td><td>Sat Dec 03 17:02:33 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>3112 seconds (3112738 ms)</td>
+<tr><td>Total time:</td><td>82 seconds (82200 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,181 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testpackage.DragandDropTest.DragtestforB()'><b>DragtestforB</b><br>Test class: testpackage.DragandDropTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=108.0.5359.72)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MVNUQ4K1&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 053d6e16f32ed7ea6b1de52ea59c474c
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at pagepackage.DragandDrop.DragandDropB(DragandDrop.java:32)
-	at testpackage.DragandDropTest.DragtestforB(DragandDropTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1273895132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1273895132'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=108.0.5359.72)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MVNUQ4K1&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 053d6e16f32ed7ea6b1de52ea59c474c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at pagepackage.DragandDrop.DragandDropB(DragandDrop.java:32)
-	at testpackage.DragandDropTest.DragtestforB(DragandDropTest.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</pre></div></td>
-<td>1500</td>
-<td>testpackage.DragandDropTest@2accdbb5</td></tr>
-<tr>
-<td title='testpackage.DragandDropTest.DragtestforA()'><b>DragtestforA</b><br>Test class: testpackage.DragandDropTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=108.0.5359.72)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MVNUQ4K1&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 060e811e68d9ebabe7494999457d7668
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at pagepackage.DragandDrop.DragandDropA(DragandDrop.java:25)
-	at testpackage.DragandDropTest.DragtestforA(DragandDropTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924802798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1924802798'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=108.0.5359.72)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MVNUQ4K1&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 060e811e68d9ebabe7494999457d7668
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at pagepackage.DragandDrop.DragandDropA(DragandDrop.java:25)
-	at testpackage.DragandDropTest.DragtestforA(DragandDropTest.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</pre></div></td>
-<td>1500</td>
-<td>testpackage.DragandDropTest@2accdbb5</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -251,80 +76,90 @@ Session ID: 060e811e68d9ebabe7494999457d7668
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testpackage.DynamiccontentTest.Dynamiccontent2test()'><b>Dynamiccontent2test</b><br>Test class: testpackage.DynamiccontentTest</td>
+<td title='testpackage.LoginPageTest.failloginbuttontest()'><b>failloginbuttontest</b><br>Test class: testpackage.LoginPageTest</td>
 <td></td>
 <td>1</td>
-<td>testpackage.DynamiccontentTest@b62d79</td></tr>
+<td>testpackage.LoginPageTest@30b7c004</td></tr>
 <tr>
 <td title='testpackage.DynamicLoadingTest.startbuttontest()'><b>startbuttontest</b><br>Test class: testpackage.DynamicLoadingTest</td>
 <td></td>
-<td>6</td>
-<td>testpackage.DynamicLoadingTest@212b5695</td></tr>
+<td>5</td>
+<td>testpackage.DynamicLoadingTest@65d6b83b</td></tr>
 <tr>
-<td title='testpackage.JSAlertTest.jsconfirmtest()'><b>jsconfirmtest</b><br>Test class: testpackage.JSAlertTest</td>
+<td title='testpackage.DragandDropTest.DragtestforA()'><b>DragtestforA</b><br>Test class: testpackage.DragandDropTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.JSAlertTest@446293d</td></tr>
-<tr>
-<td title='testpackage.NotificationTest.notificationtest()'><b>notificationtest</b><br>Test class: testpackage.NotificationTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.NotificationTest@37654521</td></tr>
-<tr>
-<td title='testpackage.CheckBoxTest.CheckedCheckBoxtest()'><b>CheckedCheckBoxtest</b><br>Test class: testpackage.CheckBoxTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.CheckBoxTest@6497b078</td></tr>
+<td>testpackage.DragandDropTest@23986957</td></tr>
 <tr>
 <td title='testpackage.CheckBoxTest.UncheckedCheckBoxtest()'><b>UncheckedCheckBoxtest</b><br>Test class: testpackage.CheckBoxTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.CheckBoxTest@6497b078</td></tr>
+<td>testpackage.CheckBoxTest@3e3047e6</td></tr>
 <tr>
-<td title='testpackage.DynamiccontentTest.Dynamiccontent3test()'><b>Dynamiccontent3test</b><br>Test class: testpackage.DynamiccontentTest</td>
-<td></td>
-<td>1</td>
-<td>testpackage.DynamiccontentTest@b62d79</td></tr>
-<tr>
-<td title='testpackage.LoginPageTest.failloginbuttontest()'><b>failloginbuttontest</b><br>Test class: testpackage.LoginPageTest</td>
-<td></td>
-<td>1</td>
-<td>testpackage.LoginPageTest@69997e9d</td></tr>
-<tr>
-<td title='testpackage.LoginPageTest.loginbuttontest()'><b>loginbuttontest</b><br>Test class: testpackage.LoginPageTest</td>
-<td></td>
-<td>1</td>
-<td>testpackage.LoginPageTest@69997e9d</td></tr>
-<tr>
-<td title='testpackage.JSAlertTest.jsprompttest()'><b>jsprompttest</b><br>Test class: testpackage.JSAlertTest</td>
+<td title='testpackage.NotificationTest.notificationtest()'><b>notificationtest</b><br>Test class: testpackage.NotificationTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.JSAlertTest@446293d</td></tr>
+<td>testpackage.NotificationTest@27ae2fd0</td></tr>
 <tr>
 <td title='testpackage.JSAlertTest.jsalerttest()'><b>jsalerttest</b><br>Test class: testpackage.JSAlertTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.JSAlertTest@446293d</td></tr>
-<tr>
-<td title='testpackage.ContextmenuTest.alerttest()'><b>alerttest</b><br>Test class: testpackage.ContextmenuTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.ContextmenuTest@1e6454ec</td></tr>
-<tr>
-<td title='testpackage.NewTabTest.tabtest()'><b>tabtest</b><br>Test class: testpackage.NewTabTest</td>
-<td></td>
-<td>0</td>
-<td>testpackage.NewTabTest@2df9b86</td></tr>
+<td>testpackage.JSAlertTest@d706f19</td></tr>
 <tr>
 <td title='testpackage.MousHoverTest.img1test()'><b>img1test</b><br>Test class: testpackage.MousHoverTest</td>
 <td></td>
 <td>0</td>
-<td>testpackage.MousHoverTest@793be5ca</td></tr>
+<td>testpackage.MousHoverTest@79efed2d</td></tr>
+<tr>
+<td title='testpackage.NewTabTest.tabtest()'><b>tabtest</b><br>Test class: testpackage.NewTabTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.NewTabTest@2928854b</td></tr>
+<tr>
+<td title='testpackage.CheckBoxTest.CheckedCheckBoxtest()'><b>CheckedCheckBoxtest</b><br>Test class: testpackage.CheckBoxTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.CheckBoxTest@3e3047e6</td></tr>
 <tr>
 <td title='testpackage.DynamiccontentTest.Dynamiccontent1test()'><b>Dynamiccontent1test</b><br>Test class: testpackage.DynamiccontentTest</td>
 <td></td>
+<td>0</td>
+<td>testpackage.DynamiccontentTest@23f7d05d</td></tr>
+<tr>
+<td title='testpackage.DynamiccontentTest.Dynamiccontent3test()'><b>Dynamiccontent3test</b><br>Test class: testpackage.DynamiccontentTest</td>
+<td></td>
 <td>1</td>
-<td>testpackage.DynamiccontentTest@b62d79</td></tr>
+<td>testpackage.DynamiccontentTest@23f7d05d</td></tr>
+<tr>
+<td title='testpackage.ContextmenuTest.alerttest()'><b>alerttest</b><br>Test class: testpackage.ContextmenuTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ContextmenuTest@4c15e7fd</td></tr>
+<tr>
+<td title='testpackage.DynamiccontentTest.Dynamiccontent2test()'><b>Dynamiccontent2test</b><br>Test class: testpackage.DynamiccontentTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DynamiccontentTest@23f7d05d</td></tr>
+<tr>
+<td title='testpackage.JSAlertTest.jsconfirmtest()'><b>jsconfirmtest</b><br>Test class: testpackage.JSAlertTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.JSAlertTest@d706f19</td></tr>
+<tr>
+<td title='testpackage.DragandDropTest.DragtestforB()'><b>DragtestforB</b><br>Test class: testpackage.DragandDropTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DragandDropTest@23986957</td></tr>
+<tr>
+<td title='testpackage.JSAlertTest.jsprompttest()'><b>jsprompttest</b><br>Test class: testpackage.JSAlertTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.JSAlertTest@d706f19</td></tr>
+<tr>
+<td title='testpackage.LoginPageTest.loginbuttontest()'><b>loginbuttontest</b><br>Test class: testpackage.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>testpackage.LoginPageTest@30b7c004</td></tr>
 </table><p>
 </body>
 </html>
