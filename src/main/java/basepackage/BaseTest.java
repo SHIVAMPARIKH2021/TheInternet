@@ -28,8 +28,7 @@ public class BaseTest {
 	protected static Actions action;
 	protected static Select select;
 	protected static WebDriverWait wait;
-	
-	
+	private static String current = System.getProperty("user.dir");
 	
 	
 
@@ -37,7 +36,7 @@ public class BaseTest {
 	public BaseTest() {
 		try {
 		prop = new Properties();	
-		file = new FileInputStream("{user.dir}\\src\\main\\java\\configurationpackage\\configuration.properties");
+		file = new FileInputStream(current+"\\src\\main\\java\\configurationpackage\\configuration.properties");
 		prop.load(file);
 	 }
 		catch(IOException e) {
@@ -60,8 +59,8 @@ switch(prop.getProperty("type")){
 		
 		case "local":
 			if(prop.getProperty("browser").equalsIgnoreCase(BaseUtil.Chrome.toString())) {
-				WebDriverManager.chromedriver().setup();
-				//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+				//WebDriverManager.chromedriver().setup();
+				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 				driver = new ChromeDriver();
 				log.info("Connecting with Chrome Browser");
 			}

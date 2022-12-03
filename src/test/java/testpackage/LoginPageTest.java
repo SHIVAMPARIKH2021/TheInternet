@@ -40,8 +40,9 @@ public class LoginPageTest extends BaseTest {
 	}
 	@Test
 	public void failloginbuttontest() {
-		loginpage.Username("ShivamParikh");
-		loginpage.Password("Shivam");
+		//Give any random username & passwrod except the true one.
+		loginpage.Username(prop.getProperty("username"));
+		loginpage.Password(prop.getProperty("password"));
 		loginpage.Loginbutton();
 		loginpage.AssertionLoginPass();
 	}

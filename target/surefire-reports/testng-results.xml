@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="15" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-02T18:10:54 EST" name="Command line suite" finished-at="2022-12-02T19:02:47 EST" duration-ms="3112738">
+    <groups>
+    </groups>
+    <test started-at="2022-12-02T18:10:54 EST" name="Command line test" finished-at="2022-12-02T19:02:47 EST" duration-ms="3112738">
+      <class name="testpackage.NewTabTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.NewTabTest@2df9b86]" started-at="2022-12-02T19:02:35 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:40 EST" duration-ms="4939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="tabtest()[pri:0, instance:testpackage.NewTabTest@2df9b86]" started-at="2022-12-02T19:02:40 EST" name="tabtest" finished-at="2022-12-02T19:02:40 EST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tabtest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.NewTabTest@2df9b86]" started-at="2022-12-02T19:02:40 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:40 EST" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.NewTabTest -->
+      <class name="testpackage.LoginPageTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.LoginPageTest@69997e9d]" started-at="2022-12-02T19:02:16 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:20 EST" duration-ms="4583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="failloginbuttontest()[pri:0, instance:testpackage.LoginPageTest@69997e9d]" started-at="2022-12-02T19:02:20 EST" name="failloginbuttontest" finished-at="2022-12-02T19:02:22 EST" duration-ms="1323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failloginbuttontest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.LoginPageTest@69997e9d]" started-at="2022-12-02T19:02:22 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:22 EST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.LoginPageTest@69997e9d]" started-at="2022-12-02T19:02:22 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:27 EST" duration-ms="4250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="loginbuttontest()[pri:0, instance:testpackage.LoginPageTest@69997e9d]" started-at="2022-12-02T19:02:27 EST" name="loginbuttontest" finished-at="2022-12-02T19:02:28 EST" duration-ms="1171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginbuttontest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.LoginPageTest@69997e9d]" started-at="2022-12-02T19:02:28 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:28 EST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.LoginPageTest -->
+      <class name="testpackage.ContextmenuTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.ContextmenuTest@1e6454ec]" started-at="2022-12-02T18:11:08 EST" name="StartSignInTest" finished-at="2022-12-02T18:11:13 EST" duration-ms="4754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="alerttest()[pri:0, instance:testpackage.ContextmenuTest@1e6454ec]" started-at="2022-12-02T18:11:13 EST" name="alerttest" finished-at="2022-12-02T18:11:13 EST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alerttest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.ContextmenuTest@1e6454ec]" started-at="2022-12-02T18:11:13 EST" name="EndSignInTest" finished-at="2022-12-02T18:11:14 EST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.ContextmenuTest -->
+      <class name="testpackage.DynamicLoadingTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.DynamicLoadingTest@212b5695]" started-at="2022-12-02T19:01:46 EST" name="StartSignInTest" finished-at="2022-12-02T19:01:52 EST" duration-ms="5468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="startbuttontest()[pri:0, instance:testpackage.DynamicLoadingTest@212b5695]" started-at="2022-12-02T19:01:52 EST" name="startbuttontest" finished-at="2022-12-02T19:01:58 EST" duration-ms="6091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbuttontest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.DynamicLoadingTest@212b5695]" started-at="2022-12-02T19:01:58 EST" name="EndSignInTest" finished-at="2022-12-02T19:01:58 EST" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.DynamicLoadingTest -->
+      <class name="testpackage.DynamiccontentTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:26 EST" name="StartSignInTest" finished-at="2022-12-02T19:01:31 EST" duration-ms="5412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="Dynamiccontent1test()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:31 EST" name="Dynamiccontent1test" finished-at="2022-12-02T19:01:32 EST" duration-ms="1080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dynamiccontent1test -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:32 EST" name="EndSignInTest" finished-at="2022-12-02T19:01:33 EST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:33 EST" name="StartSignInTest" finished-at="2022-12-02T19:01:38 EST" duration-ms="4905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="Dynamiccontent2test()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:38 EST" name="Dynamiccontent2test" finished-at="2022-12-02T19:01:39 EST" duration-ms="1164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dynamiccontent2test -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:39 EST" name="EndSignInTest" finished-at="2022-12-02T19:01:40 EST" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:40 EST" name="StartSignInTest" finished-at="2022-12-02T19:01:44 EST" duration-ms="4432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="Dynamiccontent3test()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:44 EST" name="Dynamiccontent3test" finished-at="2022-12-02T19:01:45 EST" duration-ms="1230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dynamiccontent3test -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.DynamiccontentTest@b62d79]" started-at="2022-12-02T19:01:45 EST" name="EndSignInTest" finished-at="2022-12-02T19:01:46 EST" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.DynamiccontentTest -->
+      <class name="testpackage.CheckBoxTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.CheckBoxTest@6497b078]" started-at="2022-12-02T18:10:54 EST" name="StartSignInTest" finished-at="2022-12-02T18:11:01 EST" duration-ms="7116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="CheckedCheckBoxtest()[pri:0, instance:testpackage.CheckBoxTest@6497b078]" started-at="2022-12-02T18:11:01 EST" name="CheckedCheckBoxtest" finished-at="2022-12-02T18:11:01 EST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckedCheckBoxtest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.CheckBoxTest@6497b078]" started-at="2022-12-02T18:11:01 EST" name="EndSignInTest" finished-at="2022-12-02T18:11:02 EST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.CheckBoxTest@6497b078]" started-at="2022-12-02T18:11:02 EST" name="StartSignInTest" finished-at="2022-12-02T18:11:07 EST" duration-ms="4971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="UncheckedCheckBoxtest()[pri:0, instance:testpackage.CheckBoxTest@6497b078]" started-at="2022-12-02T18:11:07 EST" name="UncheckedCheckBoxtest" finished-at="2022-12-02T18:11:07 EST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UncheckedCheckBoxtest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.CheckBoxTest@6497b078]" started-at="2022-12-02T18:11:07 EST" name="EndSignInTest" finished-at="2022-12-02T18:11:08 EST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.CheckBoxTest -->
+      <class name="testpackage.MousHoverTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.MousHoverTest@793be5ca]" started-at="2022-12-02T19:02:28 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:34 EST" duration-ms="5118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="img1test()[pri:0, instance:testpackage.MousHoverTest@793be5ca]" started-at="2022-12-02T19:02:34 EST" name="img1test" finished-at="2022-12-02T19:02:34 EST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- img1test -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.MousHoverTest@793be5ca]" started-at="2022-12-02T19:02:34 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:35 EST" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.MousHoverTest -->
+      <class name="testpackage.JSAlertTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:01:58 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:03 EST" duration-ms="4433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="jsalerttest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:03 EST" name="jsalerttest" finished-at="2022-12-02T19:02:03 EST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsalerttest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:03 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:04 EST" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:04 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:09 EST" duration-ms="5586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="jsconfirmtest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:09 EST" name="jsconfirmtest" finished-at="2022-12-02T19:02:10 EST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsconfirmtest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:10 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:10 EST" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:10 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:15 EST" duration-ms="4348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="jsprompttest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:15 EST" name="jsprompttest" finished-at="2022-12-02T19:02:15 EST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsprompttest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.JSAlertTest@446293d]" started-at="2022-12-02T19:02:15 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:16 EST" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.JSAlertTest -->
+      <class name="testpackage.NotificationTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.NotificationTest@37654521]" started-at="2022-12-02T19:02:40 EST" name="StartSignInTest" finished-at="2022-12-02T19:02:45 EST" duration-ms="4872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="notificationtest()[pri:0, instance:testpackage.NotificationTest@37654521]" started-at="2022-12-02T19:02:45 EST" name="notificationtest" finished-at="2022-12-02T19:02:46 EST" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationtest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.NotificationTest@37654521]" started-at="2022-12-02T19:02:46 EST" name="EndSignInTest" finished-at="2022-12-02T19:02:47 EST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.NotificationTest -->
+      <class name="testpackage.DragandDropTest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.DragandDropTest@2accdbb5]" started-at="2022-12-02T18:11:14 EST" name="StartSignInTest" finished-at="2022-12-02T18:11:18 EST" duration-ms="4592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="DragtestforA()[pri:0, instance:testpackage.DragandDropTest@2accdbb5]" started-at="2022-12-02T18:11:18 EST" name="DragtestforA" finished-at="2022-12-02T18:36:19 EST" duration-ms="1500426" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=108.0.5359.72)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-MVNUQ4K1', ip: '192.168.48.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 060e811e68d9ebabe7494999457d7668]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=108.0.5359.72)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-MVNUQ4K1', ip: '192.168.48.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 060e811e68d9ebabe7494999457d7668
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at pagepackage.DragandDrop.DragandDropA(DragandDrop.java:25)
+at testpackage.DragandDropTest.DragtestforA(DragandDropTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragtestforA -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.DragandDropTest@2accdbb5]" started-at="2022-12-02T18:36:19 EST" name="EndSignInTest" finished-at="2022-12-02T18:36:19 EST" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.DragandDropTest@2accdbb5]" started-at="2022-12-02T18:36:19 EST" name="StartSignInTest" finished-at="2022-12-02T18:36:25 EST" duration-ms="5236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="DragtestforB()[pri:0, instance:testpackage.DragandDropTest@2accdbb5]" started-at="2022-12-02T18:36:25 EST" name="DragtestforB" finished-at="2022-12-02T19:01:25 EST" duration-ms="1500441" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=108.0.5359.72)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-MVNUQ4K1', ip: '192.168.48.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 053d6e16f32ed7ea6b1de52ea59c474c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=108.0.5359.72)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-MVNUQ4K1', ip: '192.168.48.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 053d6e16f32ed7ea6b1de52ea59c474c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at pagepackage.DragandDrop.DragandDropB(DragandDrop.java:32)
+at testpackage.DragandDropTest.DragtestforB(DragandDropTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragtestforB -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.DragandDropTest@2accdbb5]" started-at="2022-12-02T19:01:25 EST" name="EndSignInTest" finished-at="2022-12-02T19:01:26 EST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.DragandDropTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

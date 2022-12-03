@@ -1,9 +1,9 @@
 package testpackage;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import basepackage.BaseTest;
 import pagepackage.Upload;
 
@@ -12,6 +12,7 @@ public class Uploadtest extends BaseTest {
 	public Uploadtest() {
 		super();
 	}
+	Upload uload;
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
@@ -21,7 +22,7 @@ public class Uploadtest extends BaseTest {
 		uload = new Upload(); 
 	}
 	
-	Upload uload;
+
 	
 	@Test
 	public void testupload() {
