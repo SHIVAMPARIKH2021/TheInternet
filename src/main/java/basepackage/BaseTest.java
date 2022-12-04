@@ -59,8 +59,8 @@ switch(prop.getProperty("type")){
 		
 		case "local":
 			if(prop.getProperty("browser").equalsIgnoreCase(BaseUtil.Chrome.toString())) {
-				//WebDriverManager.chromedriver().setup();
-				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
+				//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 				driver = new ChromeDriver();
 				log.info("Connecting with Chrome Browser");
 			}
