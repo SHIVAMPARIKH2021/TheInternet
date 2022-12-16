@@ -1,6 +1,6 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -12,10 +12,10 @@ public class DynamiccontentTest extends BaseTest {
 	public DynamiccontentTest() {
 		super();
 	}
+	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("dynamiccontenturl"));
+		getDriver().get(prop.getProperty("dynamiccontenturl"));
 		Thread.sleep(1000);
 		dynamiccontent = new Dynamiccontent();
 	}
@@ -37,10 +37,7 @@ public class DynamiccontentTest extends BaseTest {
 		dynamiccontent.DynamicContent3();
 		dynamiccontent.DynamiccontentAssertion();
 	}
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
+
 	 
 
 

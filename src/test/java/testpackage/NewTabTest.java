@@ -1,7 +1,8 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import basepackage.BaseTest;
@@ -14,9 +15,9 @@ public class NewTabTest extends BaseTest {
 	}
 	
 	@BeforeMethod
+	@Parameters
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("newtaburl"));
+		getDriver().get(prop.getProperty("newtaburl"));
 		Thread.sleep(1000);
 		nt = new NewTab();
 	}
@@ -26,8 +27,5 @@ public class NewTabTest extends BaseTest {
 		System.out.println(driver.getTitle().toString());
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
+	
 }

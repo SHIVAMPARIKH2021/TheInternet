@@ -50,7 +50,7 @@ public class RemoteDriverFactory {
 		return remotedriver;
 	}
 	
-	public static WebDriver getRemoteWebDriver(String getBrowser) throws MalformedURLException {
+	public static synchronized WebDriver getRemoteWebDriver(String getBrowser) throws MalformedURLException {
 		log.info("Connecting with Chrome Browser through RemoteWebDriver");
 		return setRemoteWebDriver(getBrowser);
 	}

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testpackage.Uploadtest">
+      <class name="testpackage.LoginPageTest">
         <methods>
-          <include name="testupload"/>
-          <include name="EndSignInTest"/>
           <include name="StartSignInTest"/>
+          <include name="EndSignInTest"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+          <include name="loginbuttontest"/>
         </methods>
-      </class> <!-- testpackage.Uploadtest -->
+      </class> <!-- testpackage.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

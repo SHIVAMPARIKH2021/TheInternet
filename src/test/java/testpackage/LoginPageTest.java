@@ -1,17 +1,10 @@
 package testpackage;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import basepackage.BaseTest;
-
 import pagepackage.LoginPage;
 
 public class LoginPageTest extends BaseTest {
@@ -20,25 +13,23 @@ public class LoginPageTest extends BaseTest {
 		super();
 	}
 	
+
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
+		getDriver().get(prop.getProperty("url"));
 		Thread.sleep(1000);
 		loginpage = new LoginPage();
 		}
 	
 	LoginPage loginpage;
-
-	
-	
-	@Test
+	@Test(priority=1)
 	public void loginbuttontest() {
 		loginpage.Username(prop.getProperty("username"));
 		loginpage.Password(prop.getProperty("password"));
 		loginpage.Loginbutton();
 		loginpage.AssertionLoginPass();
 	}
-	@Test
+	@Test(priority=2)
 	public void failloginbuttontest() {
 		//Give any random username & passwrod except the true one.
 		loginpage.Username(prop.getProperty("username"));
@@ -48,8 +39,5 @@ public class LoginPageTest extends BaseTest {
 	}
 	
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
+
 }

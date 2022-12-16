@@ -1,6 +1,6 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,8 +15,7 @@ public class Floatingmenutest extends BaseTest {
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("floatingmenuurl"));
+		getDriver().get(prop.getProperty("floatingmenuurl"));
 		Thread.sleep(1000);
 		fmenu = new Floatingmenu(); 
 	}
@@ -28,8 +27,5 @@ public class Floatingmenutest extends BaseTest {
 		fmenu.floatingmenu();
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-	}
+	
 }

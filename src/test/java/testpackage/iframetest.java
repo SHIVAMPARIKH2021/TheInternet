@@ -1,7 +1,9 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import basepackage.BaseTest;
@@ -13,11 +15,10 @@ public class iframetest extends BaseTest{
 		super();
 	}
 	
-
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("iframeurl"));
+//		initiate("edge");
+		getDriver().get(prop.getProperty("iframeurl"));
 		Thread.sleep(1000);
 		frame = new iFrame();
 	}
@@ -30,8 +31,4 @@ public class iframetest extends BaseTest{
 		frame.iframe();
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
 }

@@ -2,7 +2,7 @@ package testpackage;
 
 import java.util.concurrent.TimeUnit;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,8 +17,8 @@ public class CheckBoxTest extends BaseTest {
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("checkboxurl"));
+		initiate("chrome");
+		getDriver().get(prop.getProperty("checkboxurl"));
 		Thread.sleep(1000);
 		checkbox = new CheckBox();
 		}
@@ -38,8 +38,4 @@ public class CheckBoxTest extends BaseTest {
 		checkbox.AssertionCheckBox();
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
 }

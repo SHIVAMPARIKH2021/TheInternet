@@ -1,6 +1,6 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,8 +15,7 @@ public class MousHoverTest extends BaseTest {
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("MouseHoverurl"));
+		getDriver().get(prop.getProperty("MouseHoverurl"));
 		Thread.sleep(1000);
 		mh = new MouseHover();
 	}
@@ -35,8 +34,5 @@ public class MousHoverTest extends BaseTest {
 		mh.img3();
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
+	
 }

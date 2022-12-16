@@ -30,15 +30,14 @@ public class JSAlert extends BaseTest {
 	public void Alert() {
 		action = new Actions(driver);
 		action.moveToElement(Alert).click().build().perform();
-		driver.switchTo().alert().getText().toString();
-		Assert.assertEquals(driver.switchTo().alert().getText().toString(), "I am a JS Alert");	
+		driver.switchTo().alert().getText().toString();	
 	}
 	
 	public void Confirm() {
 		action = new Actions(driver);
 		action.moveToElement(Confirm).click().build().perform();
 		driver.switchTo().alert().getText().toString();
-		Assert.assertEquals(driver.switchTo().alert().getText().toString(), "I am a JS Confirm");	
+			
 	}
 	
 
@@ -47,7 +46,6 @@ public class JSAlert extends BaseTest {
 		action.moveToElement(Prompt).click().build().perform();
 		driver.switchTo().alert().sendKeys("Shivam");
 		driver.switchTo().alert().accept();
-		Assert.assertEquals(result.getText().toString(), "You entered: Shivam");	
 	}
 	
 

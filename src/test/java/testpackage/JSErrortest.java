@@ -1,7 +1,10 @@
 package testpackage;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import basepackage.BaseTest;
@@ -13,11 +16,10 @@ public class JSErrortest extends BaseTest{
 	public JSErrortest() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("jserrorurl"));
+		getDriver().get(prop.getProperty("jserrorurl"));
 		Thread.sleep(1000);
 		jserror = new JSError();
 	}
@@ -29,8 +31,8 @@ public class JSErrortest extends BaseTest{
 		jserror.Error();
 	}
 	
-	@AfterMethod
+	@AfterTest
 	public void EndSignInTest() {
-		quitbrowser();
-}
+		driver.close();
+	}
 }

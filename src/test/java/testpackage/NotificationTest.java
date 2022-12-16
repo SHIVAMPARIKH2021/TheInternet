@@ -1,6 +1,6 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,8 +14,7 @@ public class NotificationTest extends BaseTest {
 	}
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("notificationurl"));
+		getDriver().get(prop.getProperty("notificationurl"));
 		Thread.sleep(1000);
 		notification = new Notification(); 
 	}
@@ -27,8 +26,5 @@ public class NotificationTest extends BaseTest {
 		notification.clicklink();
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
+	
 }

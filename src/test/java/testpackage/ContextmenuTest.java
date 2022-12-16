@@ -1,8 +1,6 @@
 package testpackage;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,8 +15,7 @@ public class ContextmenuTest extends BaseTest {
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("contextmenuurl"));
+		getDriver().get(prop.getProperty("contextmenuurl"));
 		Thread.sleep(1000);
 		contextmenu = new Contextmenu();
 		}
@@ -32,10 +29,7 @@ public class ContextmenuTest extends BaseTest {
 	    	contextmenu.ContextmenuAssertion();
 	    }
 
-		@AfterMethod
-		public void EndSignInTest() {
-			quitbrowser();
-	}
+	
 
 
 

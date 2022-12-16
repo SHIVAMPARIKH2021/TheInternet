@@ -1,6 +1,6 @@
 package testpackage;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,8 +15,7 @@ public class Dropdowntest extends BaseTest {
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate();
-		driver.get(prop.getProperty("dropdownurl"));
+		getDriver().get(prop.getProperty("dropdownurl"));
 		Thread.sleep(1000);
 		dropdown = new Dropdown();
 	}
@@ -35,9 +34,6 @@ public class Dropdowntest extends BaseTest {
 		dropdown.DropdownAssertion();
 	}
 	
-	@AfterMethod
-	public void EndSignInTest() {
-		quitbrowser();
-}
+
 	
 }
