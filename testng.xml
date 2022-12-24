@@ -2,7 +2,6 @@
 	<test name="EdgeTest" allow-return-values="true" >
 		<parameter name="browser" value="edge" />
 		<classes>
-			<class name="testpackage.LoginPageTest" />
 			<class name="testpackage.ContextmenuTest" />
 			<class name="testpackage.Downloadtest" />
 			<class name="testpackage.DragandDropTest" />
@@ -11,6 +10,7 @@
 			<class name="testpackage.DynamicLoadingTest" />
 			<class name="testpackage.Floatingmenutest" />
 			<class name="testpackage.iframetest" />
+			<class name="testpackage.IndexTest"/>
 		</classes>
 	</test>
 	<test name="RegressionTest" allow-return-values="true">

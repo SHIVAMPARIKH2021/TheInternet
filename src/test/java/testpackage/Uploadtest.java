@@ -16,7 +16,6 @@ public class Uploadtest extends BaseTest {
 	Upload uload;
 	
 	@BeforeMethod
-	@Parameters
 	public void StartSignInTest() throws InterruptedException {
 		getDriver().get(prop.getProperty("uploadurl"));
 		Thread.sleep(1000);

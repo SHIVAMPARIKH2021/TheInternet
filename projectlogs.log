@@ -255,3 +255,111 @@
 2022-12-15 21:00:40,959  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
 2022-12-15 21:00:43,446  WARN [main] BaseTest:67 - Connecting with Chrome Browser
 2022-12-15 21:00:43,446  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-16 15:52:23,170  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-16 15:52:23,188  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-16 15:53:04,420  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-16 15:53:04,421  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-16 15:53:35,183  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-16 15:53:35,183  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-16 15:53:39,090  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-16 15:53:39,092  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:21:36,128  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:21:36,131  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:07,125  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:07,125  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:12,921  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:12,922  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:17,645  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:17,645  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:22,763  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:22,763  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:27,457  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:27,457  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:32,084  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:32,084  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:36,895  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:36,896  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:41,855  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:41,856  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:49,205  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:49,205  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:54,428  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:54,428  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:22:59,130  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:22:59,131  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:22,295  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:22,296  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:27,497  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:27,498  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:32,319  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:32,320  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:37,179  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:37,180  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:42,235  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:42,235  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:47,325  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:47,326  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:52,098  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:52,099  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:23:56,957  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:23:56,957  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:24:01,894  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-18 19:24:01,895  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:24:06,776  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-18 19:24:06,777  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:24:33,055  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-18 19:24:33,055  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-18 19:24:35,746  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-18 19:24:35,748  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 18:37:08,643  WARN [main] BaseTest:73 - Connecting with Edge Browser
+2022-12-21 18:37:08,647  INFO [main] BaseTest:74 - Current Thread ID:Thread[main,5,main]
+2022-12-21 18:37:49,189  WARN [main] BaseTest:66 - Connecting with Chrome Browser
+2022-12-21 18:37:49,189  INFO [main] BaseTest:67 - Current Thread ID:Thread[main,5,main]
+2022-12-21 18:38:12,095  WARN [main] BaseTest:66 - Connecting with Chrome Browser
+2022-12-21 18:38:12,097  INFO [main] BaseTest:67 - Current Thread ID:Thread[main,5,main]
+2022-12-21 18:38:15,421  WARN [main] BaseTest:66 - Connecting with Chrome Browser
+2022-12-21 18:38:15,424  INFO [main] BaseTest:67 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:03:48,386  WARN [main] BaseTest:73 - Connecting with Edge Browser
+2022-12-21 19:03:48,389  INFO [main] BaseTest:74 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:04:42,502  WARN [main] BaseTest:73 - Connecting with Edge Browser
+2022-12-21 19:04:42,507  INFO [main] BaseTest:74 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:06:43,205  WARN [main] BaseTest:73 - Connecting with Edge Browser
+2022-12-21 19:06:43,209  INFO [main] BaseTest:74 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:07:41,112  WARN [main] BaseTest:73 - Connecting with Edge Browser
+2022-12-21 19:07:41,116  INFO [main] BaseTest:74 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:08:25,975  WARN [main] BaseTest:73 - Connecting with Edge Browser
+2022-12-21 19:08:25,981  INFO [main] BaseTest:74 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:09:15,128  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 19:09:15,131  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:12:01,197  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 19:12:01,201  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:15:56,972  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 19:15:56,974  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:25:32,604  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 19:25:32,610  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:26:01,383  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:26:01,383  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:26:23,053  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:26:23,053  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:26:25,561  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:26:25,562  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:42:02,665  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 19:42:02,669  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:42:30,428  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:42:30,429  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:42:52,097  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:42:52,099  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:42:54,671  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:42:54,672  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:48:34,882  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 19:48:34,886  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 19:50:26,097  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 19:50:26,099  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 20:05:41,112  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 20:05:41,116  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 20:07:28,379  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 20:07:28,379  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]
+2022-12-21 20:11:00,912  WARN [main] BaseTest:74 - Connecting with Edge Browser
+2022-12-21 20:11:00,920  INFO [main] BaseTest:75 - Current Thread ID:Thread[main,5,main]
+2022-12-21 20:12:56,449  WARN [main] BaseTest:67 - Connecting with Chrome Browser
+2022-12-21 20:12:56,449  INFO [main] BaseTest:68 - Current Thread ID:Thread[main,5,main]

@@ -27,25 +27,31 @@ public class JSAlert extends BaseTest {
 	private static WebElement result;
 	
 	
-	public void Alert() {
+	public String Alert() {
 		action = new Actions(driver);
 		action.moveToElement(Alert).click().build().perform();
-		driver.switchTo().alert().getText().toString();	
+		String alertText = driver.switchTo().alert().getText().toString();	
+		driver.switchTo().alert().accept();
+		return alertText;
 	}
 	
-	public void Confirm() {
+	public String Confirm() {
 		action = new Actions(driver);
 		action.moveToElement(Confirm).click().build().perform();
-		driver.switchTo().alert().getText().toString();
+		String confirmText=driver.switchTo().alert().getText().toString();
+		driver.switchTo().alert().accept();
+		return confirmText;
 			
 	}
 	
 
-	public void Prompt() {
+	public String Prompt() {
 		action = new Actions(driver);
 		action.moveToElement(Prompt).click().build().perform();
 		driver.switchTo().alert().sendKeys("Shivam");
+		String promptText=driver.switchTo().alert().getText().toString();
 		driver.switchTo().alert().accept();
+		return promptText;
 	}
 	
 

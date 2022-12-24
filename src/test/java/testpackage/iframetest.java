@@ -17,7 +17,6 @@ public class iframetest extends BaseTest{
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-//		initiate("edge");
 		getDriver().get(prop.getProperty("iframeurl"));
 		Thread.sleep(1000);
 		frame = new iFrame();

@@ -13,6 +13,15 @@
           <include name="quitbrowser"/>
         </methods>
       </class> <!-- testpackage.Downloadtest -->
+      <class name="testpackage.IndexTest">
+        <methods>
+          <include name="result_50test"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+          <include name="indexTest"/>
+        </methods>
+      </class> <!-- testpackage.IndexTest -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
   <test thread-count="5" name="RegressionTest(failed)">
@@ -20,7 +29,6 @@
     <classes>
       <class name="testpackage.JSAlertTest">
         <methods>
-          <include name="jsconfirmtest"/>
           <include name="jsprompttest"/>
           <include name="getDriver"/>
           <include name="StartSignInTest"/>

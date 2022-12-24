@@ -17,7 +17,6 @@ public class CheckBoxTest extends BaseTest {
 	
 	@BeforeMethod
 	public void StartSignInTest() throws InterruptedException {
-		initiate("chrome");
 		getDriver().get(prop.getProperty("checkboxurl"));
 		Thread.sleep(1000);
 		checkbox = new CheckBox();

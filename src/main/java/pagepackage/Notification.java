@@ -20,7 +20,7 @@ public class Notification extends BaseTest{
 	private static WebElement success;
 	
 	public void clicklink() {
-		driver.navigate().refresh();
+		getDriver().navigate().refresh();
 		link.click();
 		if(success.getText().toString().equals("Action unsuccesful, please try again") || success.getText().toString().equals("Action successful")) {
 			System.out.println(success.getText().toString());

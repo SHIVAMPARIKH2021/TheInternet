@@ -24,20 +24,18 @@ public class JSAlertTest extends BaseTest {
 	JSAlert jsalert;
 	@Test
 	public void jsalerttest() {
-		jsalert.Alert();
-		Assert.assertEquals(driver.switchTo().alert().getText().toString(), "I am a JS Alert");
+		
+		Assert.assertEquals(jsalert.Alert(), "I am a JS Alert");
 	}
 	
 	@Test
 	public void jsconfirmtest() {
-		jsalert.Confirm();
-		Assert.assertEquals(driver.switchTo().alert().getText().toString(), "I am a JS Confirm");
+		Assert.assertEquals(jsalert.Confirm(), "I am a JS Confirm");
 	}
 	
 	@Test
 	public void jsprompttest() {
-		jsalert.Prompt();
-		Assert.assertEquals(driver.switchTo().alert().getText().toString(), "You entered: Shivam");
+		Assert.assertEquals(jsalert.Prompt(), "You entered: Shivam");
 	}
 	
 	

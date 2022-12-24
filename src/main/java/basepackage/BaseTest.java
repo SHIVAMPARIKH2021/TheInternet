@@ -14,6 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -26,7 +27,7 @@ public class BaseTest {
 	protected static Properties prop;
 	protected static WebDriver driver;
 	protected static 
-    ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+    ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
 	private static Logger log = Logger.getLogger(BaseTest.class);
 	protected static final int EXPLICIT_WAIT = 500;
 	protected static final int IMPLICIT_WAIT = 1000;
@@ -42,13 +43,12 @@ public class BaseTest {
 			prop.load(file);
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("Configurations are not found; Restart the process or Check the program");
+			log.error("Configurations are not found; Restart the process or Check the program"+""+e);
 
 		}
 	}
 
 	private static WebDriver manageDriver() {
-		//driver.get(prop.getProperty("url"));
 		driver.navigate().refresh();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -98,12 +98,12 @@ public class BaseTest {
 		return getDriver();
 
 	}
-	@BeforeTest
+	@BeforeClass
 	public static synchronized WebDriver getDriver() {
 		driver=threadLocalDriver.get();
-		return threadLocalDriver.get();
+		return driver;
 	}
-@AfterTest
+	@AfterTest
 	public static void quitbrowser() {
 		if (driver != null) {
 			driver.quit();

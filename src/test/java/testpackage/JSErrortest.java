@@ -1,10 +1,7 @@
 package testpackage;
 
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import basepackage.BaseTest;
@@ -29,10 +26,5 @@ public class JSErrortest extends BaseTest{
 	@Test
 	public void test() {
 		jserror.Error();
-	}
-	
-	@AfterTest
-	public void EndSignInTest() {
-		driver.close();
 	}
 }

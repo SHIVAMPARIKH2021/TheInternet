@@ -3,16 +3,34 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testpackage.LoginPageTest">
+      <class name="testpackage.IndexTest">
         <methods>
-          <include name="StartSignInTest"/>
-          <include name="EndSignInTest"/>
-          <include name="getDriver"/>
+          <include name="fixedIncomeTabTest"/>
+          <include name="weekColumntest"/>
+          <include name="esgTabTest"/>
+          <include name="equityTabTest"/>
+          <include name="privateMarketTabTest"/>
           <include name="initiate"/>
+          <include name="indexByKeywordTest"/>
+          <include name="assetTypeTest"/>
+          <include name="multiAssetTabTest"/>
+          <include name="tabListTest"/>
+          <include name="alternativesTabTest"/>
+          <include name="allIndexTabTest"/>
+          <include name="geoRegionTest"/>
+          <include name="getDriver"/>
+          <include name="result_50test"/>
+          <include name="indexType"/>
+          <include name="dayColumntest"/>
+          <include name="result_20test"/>
+          <include name="marketingTextTest"/>
+          <include name="indexFamilyTest"/>
           <include name="quitbrowser"/>
-          <include name="loginbuttontest"/>
+          <include name="indexByNameTest"/>
+          <include name="indexTest"/>
+          <include name="result_10test"/>
         </methods>
-      </class> <!-- testpackage.LoginPageTest -->
+      </class> <!-- testpackage.IndexTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
