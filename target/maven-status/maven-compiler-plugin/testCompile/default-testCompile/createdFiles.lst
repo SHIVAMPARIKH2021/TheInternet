@@ -5,6 +5,7 @@ testpackage\NewTabTest.class
 testpackage\NotificationTest.class
 testpackage\DragandDropTest.class
 testpackage\Dynamiccontroltest.class
+testpackage\IndexTest.class
 testpackage\CheckBoxTest.class
 testpackage\Uploadtest.class
 testpackage\JSErrortest.class

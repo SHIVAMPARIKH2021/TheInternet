@@ -17,4 +17,5 @@ pagepackage\JSError.class
 pagepackage\Upload.class
 pagepackage\NewTab.class
 pagepackage\JSAlert.class
+pagepackage\Index.class
 pagepackage\iFrame.class

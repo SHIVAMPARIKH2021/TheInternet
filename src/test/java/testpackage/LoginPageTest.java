@@ -1,11 +1,12 @@
 package testpackage;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import basepackage.BaseTest;
 import pagepackage.LoginPage;
+import utility.Parameterization;
 
 public class LoginPageTest extends BaseTest {
 
@@ -22,6 +23,12 @@ public class LoginPageTest extends BaseTest {
 		}
 	
 	LoginPage loginpage;
+	@DataProvider
+	public Object[][] data(){
+		Parameterization params = new Parameterization();
+		Object[][] testData=params.testData("Sheet1");
+		return testData;
+	}
 	@Test(priority=1)
 	public void loginbuttontest() {
 		loginpage.Username(prop.getProperty("username"));
@@ -29,11 +36,11 @@ public class LoginPageTest extends BaseTest {
 		loginpage.Loginbutton();
 		loginpage.AssertionLoginPass();
 	}
-	@Test(priority=2)
-	public void failloginbuttontest() {
+	@Test(priority=2,dataProvider="data")
+	public void failloginbuttontest(String username,String password) {
 		//Give any random username & passwrod except the true one.
-		loginpage.Username(prop.getProperty("username"));
-		loginpage.Password(prop.getProperty("password"));
+		loginpage.Username(username);
+		loginpage.Password(password);
 		loginpage.Loginbutton();
 		loginpage.AssertionLoginPass();
 	}
