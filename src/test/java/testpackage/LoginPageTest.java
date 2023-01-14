@@ -34,7 +34,7 @@ public class LoginPageTest extends BaseTest {
 		loginpage.Username(prop.getProperty("username"));
 		loginpage.Password(prop.getProperty("password"));
 		loginpage.Loginbutton();
-		loginpage.AssertionLoginPass();
+		loginpage.assertonLoginPass();
 	}
 	@Test(priority=2,dataProvider="data")
 	public void failloginbuttontest(String username,String password) {
@@ -42,7 +42,7 @@ public class LoginPageTest extends BaseTest {
 		loginpage.Username(username);
 		loginpage.Password(password);
 		loginpage.Loginbutton();
-		loginpage.AssertionLoginPass();
+		loginpage.assertonLoginPass();
 	}
 	
 	

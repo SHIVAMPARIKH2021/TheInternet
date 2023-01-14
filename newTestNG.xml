@@ -1,8 +1,11 @@
 <suite name="Sanity">
+<listners>
+<listner class-name="utility.ExtentReportUtil"/>
+</listners>
 <test name="Parameterization Test">
 <parameter name="browser" value="edge" />
 <classes>
-<class name="testpackage.LoginPageTest"/>
+<class name="testpackage.ContextmenuTest"/>
 </classes>
 </test>
 </suite>

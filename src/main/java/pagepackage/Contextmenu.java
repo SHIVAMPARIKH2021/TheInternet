@@ -20,18 +20,20 @@ public class Contextmenu extends BaseTest{
 	private static WebElement ContextmenuBox;
 	
 	private static Contextmenu contextmenu;
+	String alertText;
 	
 	public Alert ContextmenuBox() {
 		action = new Actions(driver);
 		action.moveToElement(ContextmenuBox);
 		action.contextClick().build().perform();;
 		Alert alert = driver.switchTo().alert();
+		alertText = alert.getText().toString();
 		return alert ;
 	}
 	
 	public void ContextmenuAssertion() {
 		contextmenu=new Contextmenu();
-		Assert.assertEquals(contextmenu.ContextmenuBox().getText().toString(), "You selected a context menu");
+		Assert.assertEquals(alertText, "You selected a context menu");
 	}
 	
 	

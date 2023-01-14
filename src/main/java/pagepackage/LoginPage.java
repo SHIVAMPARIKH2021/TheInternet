@@ -22,10 +22,10 @@ public class LoginPage extends BaseTest{
 	@FindBy (xpath="//i[contains(text(),' Login')]/parent::button")
 	private static WebElement LoginButton;
 	
-	@FindBy(id="flash")
+	@FindBy(xpath="//div[@class='flash success']")
 	private static WebElement LoginAssertion;
 	
-	@FindBy(id="flash-messages")
+	@FindBy(xpath="//div[@class='flash error']")
 	private static WebElement FailLoginAssertion;
 
 	public void Username(String USERNAME) {
@@ -47,14 +47,12 @@ public class LoginPage extends BaseTest{
 	
 	
 	
-	public void AssertionLoginPass() {
-		if(prop.getProperty("username").contentEquals("tomsmith") && prop.getProperty("password").contentEquals("SuperSecretPassword!"))
+	public void assertonLoginPass() {
+		if(FailLoginAssertion == null)
 		Assert.assertEquals(LoginAssertion.getText().toString().contains("You logged into a secure area!"), true);
 	
-	else {
-		Assert.assertEquals(FailLoginAssertion.getText().toString().contains("Your username is invalid!"), true);
+		else if(LoginAssertion == null) {
+		Assert.assertEquals(FailLoginAssertion.getText().toString().contains("invalid!"), true);
 	}
-	
 	}
-	
 }

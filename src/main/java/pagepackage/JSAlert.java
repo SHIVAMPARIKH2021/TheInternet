@@ -23,7 +23,7 @@ public class JSAlert extends BaseTest {
 	@FindBy(xpath="//*[@id=\"content\"]/div/ul/li[3]/button")
 	private static WebElement Prompt;
 	
-	@FindBy(xpath="//*[@id=\"result\"]")
+	@FindBy(xpath="//p[@id='result']")
 	private static WebElement result;
 	
 	
@@ -49,8 +49,8 @@ public class JSAlert extends BaseTest {
 		action = new Actions(driver);
 		action.moveToElement(Prompt).click().build().perform();
 		driver.switchTo().alert().sendKeys("Shivam");
-		String promptText=driver.switchTo().alert().getText().toString();
 		driver.switchTo().alert().accept();
+		String promptText=result.getText().toString();
 		return promptText;
 	}
 	
