@@ -3,7 +3,7 @@
 		<listener class-name="utility.ExtentReportUtil" />
 	</listeners>
 	<test name="EdgeTest" allow-return-values="true">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testpackage.LoginPageTest"/>
 			<class name="testpackage.ContextmenuTest" />

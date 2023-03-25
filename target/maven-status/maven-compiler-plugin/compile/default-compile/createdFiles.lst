@@ -1,3 +1,4 @@
+utility\ExtentReportUtil.class
 basepackage\RemoteDriverFactory.class
 pagepackage\DynamicLoading.class
 pagepackage\CheckBox.class
@@ -17,5 +18,6 @@ pagepackage\JSError.class
 pagepackage\Upload.class
 pagepackage\NewTab.class
 pagepackage\JSAlert.class
+utility\Parameterization.class
 pagepackage\Index.class
 pagepackage\iFrame.class

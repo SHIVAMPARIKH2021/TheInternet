@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="testpackage.MousHoverTest">
+        <methods>
+          <include name="img1test"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="StartSignInTest"/>
+          <include name="quitbrowser"/>
+        </methods>
+      </class> <!-- testpackage.MousHoverTest -->
+      <class name="testpackage.DynamicLoadingTest">
+        <methods>
+          <include name="StartSignInTest"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="startbuttontest"/>
+          <include name="quitbrowser"/>
+        </methods>
+      </class> <!-- testpackage.DynamicLoadingTest -->
+      <class name="testpackage.ContextmenuTest">
+        <methods>
+          <include name="alerttest"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+          <include name="StartSignInTest"/>
+        </methods>
+      </class> <!-- testpackage.ContextmenuTest -->
+      <class name="testpackage.DragandDropTest">
+        <methods>
+          <include name="DragtestforB"/>
+          <include name="getDriver"/>
+          <include name="DragtestforA"/>
+          <include name="initiate"/>
+          <include name="StartSignInTest"/>
+          <include name="quitbrowser"/>
+        </methods>
+      </class> <!-- testpackage.DragandDropTest -->
+      <class name="testpackage.NewTabTest">
+        <methods>
+          <include name="tabtest"/>
+          <include name="StartSignInTest"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+        </methods>
+      </class> <!-- testpackage.NewTabTest -->
+      <class name="testpackage.DynamiccontentTest">
+        <methods>
+          <include name="getDriver"/>
+          <include name="Dynamiccontent2test"/>
+          <include name="initiate"/>
+          <include name="StartSignInTest"/>
+          <include name="Dynamiccontent1test"/>
+          <include name="quitbrowser"/>
+          <include name="Dynamiccontent3test"/>
+        </methods>
+      </class> <!-- testpackage.DynamiccontentTest -->
+      <class name="testpackage.CheckBoxTest">
+        <methods>
+          <include name="getDriver"/>
+          <include name="UncheckedCheckBoxtest"/>
+          <include name="initiate"/>
+          <include name="StartSignInTest"/>
+          <include name="quitbrowser"/>
+          <include name="CheckedCheckBoxtest"/>
+        </methods>
+      </class> <!-- testpackage.CheckBoxTest -->
+      <class name="testpackage.IndexTest">
+        <methods>
+          <include name="fixedIncomeTabTest"/>
+          <include name="weekColumntest"/>
+          <include name="esgTabTest"/>
+          <include name="equityTabTest"/>
+          <include name="privateMarketTabTest"/>
+          <include name="initiate"/>
+          <include name="indexByKeywordTest"/>
+          <include name="assetTypeTest"/>
+          <include name="multiAssetTabTest"/>
+          <include name="alternativesTabTest"/>
+          <include name="allIndexTabTest"/>
+          <include name="tabListTest"/>
+          <include name="geoRegionTest"/>
+          <include name="result_50test"/>
+          <include name="getDriver"/>
+          <include name="indexType"/>
+          <include name="dayColumntest"/>
+          <include name="result_20test"/>
+          <include name="quitbrowser"/>
+          <include name="indexFamilyTest"/>
+          <include name="marketingTextTest"/>
+          <include name="indexByNameTest"/>
+          <include name="indexTest"/>
+          <include name="result_10test"/>
+        </methods>
+      </class> <!-- testpackage.IndexTest -->
+      <class name="testpackage.LoginPageTest">
+        <methods>
+          <include name="StartSignInTest"/>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+          <include name="loginbuttontest"/>
+          <include name="failloginbuttontest"/>
+        </methods>
+      </class> <!-- testpackage.LoginPageTest -->
+      <class name="testpackage.NotificationTest">
+        <methods>
+          <include name="getDriver"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+          <include name="notificationtest"/>
+          <include name="StartSignInTest"/>
+        </methods>
+      </class> <!-- testpackage.NotificationTest -->
+      <class name="testpackage.JSAlertTest">
+        <methods>
+          <include name="jsconfirmtest"/>
+          <include name="jsprompttest"/>
+          <include name="getDriver"/>
+          <include name="StartSignInTest"/>
+          <include name="initiate"/>
+          <include name="quitbrowser"/>
+          <include name="jsalerttest"/>
+        </methods>
+      </class> <!-- testpackage.JSAlertTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
