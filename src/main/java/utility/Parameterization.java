@@ -14,7 +14,7 @@ public class Parameterization {
 	public Object[][] testData(String sheetName) {
 		FileInputStream dataFile=null;
 		try {
-			dataFile = new FileInputStream("C:\\Users\\shiva\\eclipse-workspace\\Internet\\OrangHRMDetails.xlsx");
+			dataFile = new FileInputStream("C:\\Users\\shiva\\eclipse-workspace\\TheInternet\\OrangHRMDetails.xlsx");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

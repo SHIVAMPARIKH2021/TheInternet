@@ -17,6 +17,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Optional;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.BaseUtil;
@@ -55,21 +56,21 @@ public class BaseTest {
 		return driver;
 	}
 	@BeforeTest
-	@Parameters("browser")
-	public static synchronized WebDriver initiate(String browser){
+	@Parameters({"browser"})
+	public static synchronized WebDriver initiate(@Optional("Abc") String browser){
 		switch(prop.getProperty("type")){
 		
 		case "local":
 			if(browser.equalsIgnoreCase(BaseUtil.Chrome.toString())) {
-				//WebDriverManager.chromedriver().setup();
-				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
+//				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 				threadLocalDriver.set(driver=new ChromeDriver());
 				log.warn("Connecting with Chrome Browser");
 				log.info("Current Thread ID:"+Thread.currentThread());
 			}
 			else if(browser.equalsIgnoreCase(BaseUtil.Edge.toString())) {
-				//WebDriverManager.edgedriver().setup();
-				System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
+				WebDriverManager.edgedriver().setup();
+//				System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
 				threadLocalDriver.set(driver=new EdgeDriver());
 				log.warn("Connecting with Edge Browser");
 				log.info("Current Thread ID:"+Thread.currentThread());
