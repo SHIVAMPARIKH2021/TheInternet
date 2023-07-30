@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,7 +35,7 @@ public class BaseTest {
     private static Logger log = Logger.getLogger(BaseTest.class);
     protected static final int EXPLICIT_WAIT = 500;
     protected static final int IMPLICIT_WAIT = 1000;
-    private static final long WAIT_FOR_BUILD = 10000;
+    private static final long WAIT_FOR_BUILD = 10000L;
     protected static Actions action;
     protected static Select select;
     protected static WebDriverWait wait;
@@ -93,6 +94,7 @@ public class BaseTest {
                     options.addArguments("--disable-dev-shm-usage");
                     options.addArguments("--disable-browser-side-navigation");
                     options.addArguments("--disable-gpu");
+                    options.setPageLoadStrategy(PageLoadStrategy.NONE);
                     WebDriverManager.chromedriver().setup();
 //				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                     threadLocalDriver.set(driver = new ChromeDriver(options));
