@@ -2,6 +2,7 @@
 /shelf/
 /workspace.xml
 target/
+*.class
 .classpath
 .project
 projectlogs.log
