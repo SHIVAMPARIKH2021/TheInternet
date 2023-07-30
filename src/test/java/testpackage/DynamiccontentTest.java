@@ -23,17 +23,17 @@ public class DynamiccontentTest extends BaseTest {
 	Dynamiccontent dynamiccontent;
 	
 	@Test
-	public void Dynamiccontent1test() {
+	public void Dynamiccontent1test() throws InterruptedException {
 		dynamiccontent.DynamicContent1();
 		dynamiccontent.DynamiccontentAssertion();
 	}
 	@Test
-	public void Dynamiccontent2test() {
+	public void Dynamiccontent2test() throws InterruptedException {
 		dynamiccontent.DynamicContent2();
 		dynamiccontent.DynamiccontentAssertion();
 	}
 	@Test
-	public void Dynamiccontent3test() {
+	public void Dynamiccontent3test() throws InterruptedException {
 		dynamiccontent.DynamicContent3();
 		dynamiccontent.DynamiccontentAssertion();
 	}

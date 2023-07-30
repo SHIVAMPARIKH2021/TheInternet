@@ -13,11 +13,11 @@ public class IndexTest extends BaseTest {
 		super();
 	}
 	Index in;
-	
+
 	@BeforeMethod
 	public void indexTest() throws InterruptedException {
 		getDriver().get(prop.getProperty("indexurl"));
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 		in=new Index();
 	}
 	@Test
@@ -90,17 +90,17 @@ public class IndexTest extends BaseTest {
 		in.result50();
 		System.out.println(in.result50());
 	}
-	
+
 	@Test
 	public void dayColumntest() {
 		in.dayColumn();
 	}
-	
+
 	@Test
 	public void weekColumntest() {
 		in.weekColumn();
 	}
-	
+
 	@Test
 	public void marketingTextTest() {
 		System.out.println(in.marketingText());
@@ -117,5 +117,5 @@ public class IndexTest extends BaseTest {
 	//public void closeIndex() {
 	//	driver.close();
 	//}
-	
+
 }

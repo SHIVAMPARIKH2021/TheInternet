@@ -7,6 +7,8 @@ import org.testng.Assert;
 
 import basepackage.BaseTest;
 
+import java.util.concurrent.TimeUnit;
+
 public class Dynamiccontent extends BaseTest {
 
 	public Dynamiccontent() {
@@ -29,24 +31,22 @@ public class Dynamiccontent extends BaseTest {
 	private static String content3;
 	
 	public String DynamicContent1() {
-		driver.navigate().refresh();
 		content1 = dynamicmsg1.getAttribute("src").toString();
 		return content1;
 	}
 	
 	public String DynamicContent2() {
-		driver.navigate().refresh();
 		content2 = dynamicmsg2.getAttribute("src").toString();
 		return content2;
 	}
 	
-	public String DynamicContent3() {
-		driver.navigate().refresh();
+	public String DynamicContent3() throws InterruptedException {
 		content3 = dynamicmsg3.getAttribute("src").toString();
 		return content3;
 	}
 	
-	public void DynamiccontentAssertion() {
+	public void DynamiccontentAssertion() throws InterruptedException {
+		driver.navigate().refresh();
 		dynamiccontent=new Dynamiccontent(); 
 		if(DynamicContent1()!= null)
 		Assert.assertNotEquals(dynamiccontent.DynamicContent1(), dynamiccontent.DynamicContent2());
