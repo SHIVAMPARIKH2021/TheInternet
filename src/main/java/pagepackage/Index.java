@@ -217,26 +217,23 @@ Actions action;
 		return georegionlist;
 	}
 	
-	public String result10() throws InterruptedException {
+	public String result10() {
 		action = new Actions(driver);
-		action.wait(BaseTest.EXPLICIT_WAIT);
 		action.moveToElement(resultSelect).build().perform();
 		action.click().build().perform();
 		result_10.click();
 		return result_10.getText();
 	}
 	
-	public String result20() throws InterruptedException {
+	public String result20() {
 		action = new Actions(driver);
-		action.wait(BaseTest.EXPLICIT_WAIT);
 		action.moveToElement(resultSelect).build().perform();
 		action.click().build().perform();
 		result_20.click();
 		return result_20.getText();
 	}
-	public String result50() throws InterruptedException {
+	public String result50() {
 			action = new Actions(driver);
-			action.wait(BaseTest.EXPLICIT_WAIT);
 			action.moveToElement(resultSelect).build().perform();
 			action.click().build().perform();
 			result_50.click();
