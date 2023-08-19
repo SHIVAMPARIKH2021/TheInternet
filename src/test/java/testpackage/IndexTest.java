@@ -1,5 +1,6 @@
 package testpackage;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -76,17 +77,17 @@ public class IndexTest extends BaseTest {
 		in.geographicRegion();
 	}
 	@Test
-	public void result_10test() {
+	public void result_10test() throws InterruptedException,StaleElementReferenceException {
 		in.result10();
 		System.out.println(in.result10());
 	}
 	@Test
-	public void result_20test() {
+	public void result_20test() throws InterruptedException,StaleElementReferenceException {
 		in.result20();
 		System.out.println(in.result20());
 	}
 	@Test
-	public void result_50test() {
+	public void result_50test() throws InterruptedException, StaleElementReferenceException {
 		in.result50();
 		System.out.println(in.result50());
 	}
