@@ -9,6 +9,8 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
+import static utility.BaseUtil.currentDirectory;
+
 public class Parameterization {
 	
 	Sheet sheet;
@@ -16,7 +18,7 @@ public class Parameterization {
 	public Object[][] testData(String sheetName) {
 		FileInputStream dataFile=null;
 		try {
-			dataFile = new FileInputStream(System.getProperty("user.dir")+"\\OrangHRMDetails.xlsx");
+			dataFile = new FileInputStream(currentDirectory+"\\OrangHRMDetails.xlsx");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

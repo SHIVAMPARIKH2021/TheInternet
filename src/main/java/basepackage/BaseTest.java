@@ -25,6 +25,8 @@ import org.testng.annotations.Optional;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.BaseUtil;
 
+import static utility.BaseUtil.currentDirectory;
+
 public class BaseTest {
 
     private static FileInputStream file;
@@ -39,12 +41,11 @@ public class BaseTest {
     protected static Actions action;
     protected static Select select;
     protected static WebDriverWait wait;
-    private static String current = System.getProperty("user.dir");
 
     public BaseTest() {
         try {
             prop = new Properties();
-            file = new FileInputStream(current + "\\src\\main\\java\\configurationpackage\\configuration.properties");
+            file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\configuration.properties");
             prop.load(file);
         } catch (IOException e) {
             e.printStackTrace();
@@ -63,25 +64,23 @@ public class BaseTest {
     @BeforeTest
     @Parameters({"browser"})
     public static synchronized WebDriver initiate(@Optional("Abc") String browser) {
+        log.info("Browser is: "+browser);
         switch (prop.getProperty("type")) {
 
             case "local":
                 if (browser.equalsIgnoreCase(BaseUtil.Chrome.toString())) {
                     WebDriverManager.chromedriver().setup();
-//				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                     threadLocalDriver.set(driver = new ChromeDriver());
                     driver.manage().timeouts().pageLoadTimeout(EXPLICIT_WAIT, TimeUnit.MILLISECONDS);
                     log.warn("Connecting with Chrome Browser");
                     log.info("Current Thread ID:" + Thread.currentThread());
                 } else if (browser.equalsIgnoreCase(BaseUtil.FireFox.toString())) {
                     WebDriverManager.firefoxdriver().setup();
-                    //System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
                     threadLocalDriver.set(driver = new FirefoxDriver());
                     log.warn("Connecting with FireFox Browser");
                     log.info("Current Thread ID:" + Thread.currentThread());
                 } else if (browser.equalsIgnoreCase(BaseUtil.Edge.toString())) {
                     WebDriverManager.edgedriver().setup();
-//				System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
                     threadLocalDriver.set(driver = new EdgeDriver());
                     log.warn("Connecting with Edge Browser");
                     log.info("Current Thread ID:" + Thread.currentThread());
@@ -96,7 +95,6 @@ public class BaseTest {
                     options.addArguments("--disable-gpu");
                     options.setPageLoadStrategy(PageLoadStrategy.NONE);
                     WebDriverManager.chromedriver().setup();
-//				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                     threadLocalDriver.set(driver = new ChromeDriver(options));
                     driver.manage().timeouts().pageLoadTimeout(WAIT_FOR_BUILD, TimeUnit.MILLISECONDS);
                     log.warn("Connecting with Chrome Browser");
