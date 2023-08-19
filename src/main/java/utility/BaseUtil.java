@@ -8,6 +8,7 @@ public enum BaseUtil {
 	Chrome, 
 	Edge;
 public static int PAGE_RESULT = 64;
+public static String currentDirectory = System.getProperty("user.dir");
 	
 	@FindBy(xpath = "//span[text()='Deliver to Shivam']") 
 	public static WebElement ADDRESS_BUTTON;
