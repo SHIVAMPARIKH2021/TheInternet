@@ -4,7 +4,7 @@
   <test thread-count="5" name="Parameterization Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="testpackage.JSAlertTest">
+      <class name="testpackageUI.JSAlertTest">
         <methods>
           <include name="jsprompttest"/>
           <include name="getDriver"/>
@@ -12,7 +12,7 @@
           <include name="initiate"/>
           <include name="quitbrowser"/>
         </methods>
-      </class> <!-- testpackage.JSAlertTest -->
+      </class> <!-- testpackageUI.JSAlertTest -->
     </classes>
   </test> <!-- Parameterization Test(failed) -->
 </suite> <!-- Failed suite [Sanity] -->
