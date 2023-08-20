@@ -35,13 +35,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
   <testcase classname="basepackage.BaseTest" name="@BeforeClass getDriver" time="0.0">
     <skipped/>
   </testcase> <!-- @BeforeClass getDriver -->
-  <testcase classname="testpackage.ContextmenuTest" name="@BeforeMethod StartSignInTest" time="0.0">
+  <testcase classname="testpackageUI.ContextmenuTest" name="@BeforeMethod StartSignInTest" time="0.0">
     <skipped/>
   </testcase> <!-- @BeforeMethod StartSignInTest -->
   <testcase classname="basepackage.BaseTest" name="@AfterTest quitbrowser" time="0.0">
     <skipped/>
   </testcase> <!-- @AfterTest quitbrowser -->
-  <testcase classname="testpackage.ContextmenuTest" name="alerttest" time="0.0">
+  <testcase classname="testpackageUI.ContextmenuTest" name="alerttest" time="0.0">
     <skipped/>
   </testcase> <!-- alerttest -->
 </testsuite> <!-- Default test -->

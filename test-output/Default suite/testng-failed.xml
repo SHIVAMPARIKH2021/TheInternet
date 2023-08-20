@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testpackage.ContextmenuTest">
+      <class name="testpackageUI.ContextmenuTest">
         <methods>
           <include name="alerttest"/>
           <include name="getDriver"/>
@@ -11,7 +11,7 @@
           <include name="quitbrowser"/>
           <include name="StartSignInTest"/>
         </methods>
-      </class> <!-- testpackage.ContextmenuTest -->
+      </class> <!-- testpackageUI.ContextmenuTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

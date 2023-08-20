@@ -7,7 +7,7 @@
   <test thread-count="5" name="EdgeTest(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="testpackage.IndexTest">
+      <class name="testpackageUI.IndexTest">
         <methods>
           <include name="result_50test"/>
           <include name="getDriver"/>
@@ -16,8 +16,8 @@
           <include name="result_10test"/>
           <include name="indexTest"/>
         </methods>
-      </class> <!-- testpackage.IndexTest -->
-      <class name="testpackage.Downloadtest">
+      </class> <!-- testpackageUI.IndexTest -->
+      <class name="testpackageUI.Downloadtest">
         <methods>
           <include name="testdownload"/>
           <include name="getDriver"/>
@@ -25,7 +25,7 @@
           <include name="initiate"/>
           <include name="quitbrowser"/>
         </methods>
-      </class> <!-- testpackage.Downloadtest -->
+      </class> <!-- testpackageUI.Downloadtest -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Internet] -->

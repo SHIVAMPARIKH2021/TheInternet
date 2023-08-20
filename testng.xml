@@ -5,29 +5,29 @@
 	<test name="EdgeTest" allow-return-values="true">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="testpackage.LoginPageTest"/>
-			<class name="testpackage.ContextmenuTest" />
-			<class name="testpackage.Downloadtest" />
-			<class name="testpackage.DragandDropTest" />
-			<class name="testpackage.DynamiccontentTest" />
-			<class name="testpackage.Dropdowntest" />
-			<class name="testpackage.DynamicLoadingTest" />
-			<class name="testpackage.Floatingmenutest" />
-			<class name="testpackage.iframetest" />
-			<class name="testpackage.IndexTest" />
+			<class name="testpackageUI.LoginPageTest"/>
+			<class name="testpackageUI.ContextmenuTest" />
+			<class name="testpackageUI.Downloadtest" />
+			<class name="testpackageUI.DragandDropTest" />
+			<class name="testpackageUI.DynamiccontentTest" />
+			<class name="testpackageUI.Dropdowntest" />
+			<class name="testpackageUI.DynamicLoadingTest" />
+			<class name="testpackageUI.Floatingmenutest" />
+			<class name="testpackageUI.iframetest" />
+			<class name="testpackageUI.IndexTest" />
 		</classes>
 	</test>
 	<test name="RegressionTest" allow-return-values="true">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="testpackage.JSAlertTest" />
-			<class name="testpackage.Dynamiccontroltest" />
-			<class name="testpackage.MousHoverTest" />
-			<class name="testpackage.JSErrortest" />
-			<class name="testpackage.NewTabTest" />
-			<class name="testpackage.NotificationTest" />
-			<class name="testpackage.Uploadtest" />
-			<class name="testpackage.CheckBoxTest" />
+			<class name="testpackageUI.JSAlertTest" />
+			<class name="testpackageUI.Dynamiccontroltest" />
+			<class name="testpackageUI.MousHoverTest" />
+			<class name="testpackageUI.JSErrortest" />
+			<class name="testpackageUI.NewTabTest" />
+			<class name="testpackageUI.NotificationTest" />
+			<class name="testpackageUI.Uploadtest" />
+			<class name="testpackageUI.CheckBoxTest" />
 		</classes>
 	</test>
 </suite>
