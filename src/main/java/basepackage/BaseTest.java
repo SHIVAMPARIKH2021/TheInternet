@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import io.restassured.RestAssured;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -54,6 +55,18 @@ public class BaseTest {
         }
     }
 
+    public BaseTest(String whichPropertyFile) {
+        try {
+            prop = new Properties();
+            file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\" + whichPropertyFile);
+            prop.load(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+            log.error("Configurations are not found; Restart the process or Check the program" + "" + e);
+
+        }
+    }
+
     private static WebDriver manageDriver() {
         driver.navigate().refresh();
         driver.manage().window().maximize();
@@ -64,7 +77,7 @@ public class BaseTest {
     @BeforeTest
     @Parameters({"browser"})
     public static synchronized WebDriver initiate(@Optional("Abc") String browser) {
-        log.info("Browser is: "+browser);
+        log.info("Browser is: " + browser);
         switch (prop.getProperty("type")) {
 
             case "local":
@@ -132,5 +145,13 @@ public class BaseTest {
         } else {
             driver.close();
         }
+    }
+
+    public static BaseTest getPathThroughProperties() {
+        return new BaseTest("apiConfig.properties");
+    }
+
+    public static String getBaseURI() {
+        return RestAssured.baseURI = "https://reqres.in/";
     }
 }
