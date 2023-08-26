@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import basepackage.BaseTest;
 import pagepackage.LoginPage;
-import utility.Parameterization;
+import utility.ParameterizationUtil;
 
 public class LoginPageTest extends BaseTest {
 
@@ -25,7 +25,7 @@ public class LoginPageTest extends BaseTest {
 	LoginPage loginpage;
 	@DataProvider
 	public Object[][] data(){
-		Parameterization params = new Parameterization();
+		ParameterizationUtil params = new ParameterizationUtil();
 		Object[][] testData=params.testData("Sheet1");
 		return testData;
 	}
