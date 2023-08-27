@@ -9,8 +9,8 @@ import java.util.Properties;
 import static utility.ResourcePathUtil.currentDirectory;
 
 public class CommonUtil {
-    private static FileInputStream file;
-    protected static Properties prop;
+    public static FileInputStream file;
+    public static Properties prop;
     public CommonUtil(String whichPropertyFile) {
         try {
             prop = new Properties();

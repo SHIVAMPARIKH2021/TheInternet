@@ -11,10 +11,12 @@ import org.testng.annotations.Test;
 import utility.CommonUtil;
 
 import java.util.HashMap;
+import java.util.Properties;
 
-public class TestGetRequest extends BaseTest{
+public class TestGetRequest {
     String path;
     HashMap<String,Integer> queryParameters = new HashMap<>();
+    Properties prop = new Properties();
 
     public TestGetRequest() {
     }
