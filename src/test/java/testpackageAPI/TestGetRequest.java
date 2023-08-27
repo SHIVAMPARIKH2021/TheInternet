@@ -22,7 +22,7 @@ public class TestGetRequest {
     String path;
     HashMap<String,Integer> queryParameters = new HashMap<>();
     Response response;
-    ObjectMapper objectMapper = new ObjectMapper();
+    ObjectMapper objectMapper;
     public TestGetRequest() {
     }
 
@@ -32,6 +32,7 @@ public class TestGetRequest {
         queryParameters.put("page",2);
         path=CommonUtil.getPath("userPath");
         CommonUtil.getBaseURI();
+        objectMapper = new ObjectMapper();
     }
 
     @Test(priority = 1)
@@ -45,7 +46,6 @@ public class TestGetRequest {
     @Test(dependsOnMethods = {"testGetRequest"},priority = 2)
     public void testDataFieldFromResponse(){
         try {
-//            GetRequestTestData getRequestTestData = objectMapper.readValue(response.getBody().asPrettyString(), GetRequestTestData.class);
             JsonNode jsonNode = objectMapper.readTree(response.getBody().asPrettyString());
             JsonNode dataNode = jsonNode.get("data");
             Assert.assertEquals(dataNode.get(0).get("email").asText(),"michael.lawson@reqres.in");
@@ -59,7 +59,7 @@ public class TestGetRequest {
     public void testPerPageFieldResponse(){
         try {
             GetRequestTestData getRequestTestData = objectMapper.readValue(response.getBody().asPrettyString(), GetRequestTestData.class);
-            int perPageField = getRequestTestData.per_page;
+            int perPageField = getRequestTestData.getPer_page();
             Assert.assertEquals(perPageField,6);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
