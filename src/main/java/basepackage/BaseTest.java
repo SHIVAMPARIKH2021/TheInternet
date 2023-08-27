@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import io.restassured.RestAssured;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -25,8 +23,9 @@ import org.testng.annotations.Optional;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.BaseUtil;
+import utility.CommonUtil;
 
-import static utility.BaseUtil.currentDirectory;
+import static utility.ResourcePathUtil.currentDirectory;
 
 public class BaseTest {
 
@@ -44,27 +43,8 @@ public class BaseTest {
     protected static WebDriverWait wait;
 
     public BaseTest() {
-        try {
-            prop = new Properties();
-            file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\configuration.properties");
-            prop.load(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-            log.error("Configurations are not found; Restart the process or Check the program" + "" + e);
-
-        }
-    }
-
-    public BaseTest(String whichPropertyFile) {
-        try {
-            prop = new Properties();
-            file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\" + whichPropertyFile);
-            prop.load(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-            log.error("Configurations are not found; Restart the process or Check the program" + "" + e);
-
-        }
+        CommonUtil.getPathThroughProperties("configuraton.properties");
+        log.error("Configurations are not found; Restart the process or Check the program");
     }
 
     private static WebDriver manageDriver() {
@@ -147,11 +127,5 @@ public class BaseTest {
         }
     }
 
-    public static BaseTest getPathThroughProperties() {
-        return new BaseTest("apiConfig.properties");
-    }
 
-    public static String getBaseURI() {
-        return RestAssured.baseURI = "https://reqres.in/";
-    }
 }
