@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-import static utility.BaseUtil.currentDirectory;
+import static utility.ResourcePathUtil.currentDirectory;
 
 public class Parameterization {
 	
