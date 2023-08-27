@@ -1,21 +1,28 @@
 package testpackageAPI;
 
-import basepackage.BaseTest;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.google.gson.JsonArray;
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import testData.GetRequestTestData;
 import utility.CommonUtil;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Properties;
+import java.util.Iterator;
 
 public class TestGetRequest {
-   public static String path;
+    String path;
     HashMap<String,Integer> queryParameters = new HashMap<>();
+    Response response;
+    ObjectMapper objectMapper = new ObjectMapper();
     public TestGetRequest() {
     }
 
@@ -27,11 +34,35 @@ public class TestGetRequest {
         CommonUtil.getBaseURI();
     }
 
-    @Test
+    @Test(priority = 1)
     public void testGetRequest() {
         RequestSpecification request = RestAssured.given().relaxedHTTPSValidation();
-        Response response = request.queryParams(queryParameters).get(path);
+        response = request.queryParams(queryParameters).get(path);
         int statuscode = response.getStatusCode();
         Assert.assertEquals(statuscode, 200);
+    }
+
+    @Test(dependsOnMethods = {"testGetRequest"},priority = 2)
+    public void testDataFieldFromResponse(){
+        try {
+//            GetRequestTestData getRequestTestData = objectMapper.readValue(response.getBody().asPrettyString(), GetRequestTestData.class);
+            JsonNode jsonNode = objectMapper.readTree(response.getBody().asPrettyString());
+            JsonNode dataNode = jsonNode.get("data");
+            Assert.assertEquals(dataNode.get(0).get("email").asText(),"michael.lawson@reqres.in");
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @Test(dependsOnMethods = {"testGetRequest"},priority = 3)
+    public void testPerPageFieldResponse(){
+        try {
+            GetRequestTestData getRequestTestData = objectMapper.readValue(response.getBody().asPrettyString(), GetRequestTestData.class);
+            int perPageField = getRequestTestData.per_page;
+            Assert.assertEquals(perPageField,6);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
