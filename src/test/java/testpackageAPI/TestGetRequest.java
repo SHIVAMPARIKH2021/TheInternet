@@ -14,27 +14,24 @@ import java.util.HashMap;
 import java.util.Properties;
 
 public class TestGetRequest {
-    String path;
+   public static String path;
     HashMap<String,Integer> queryParameters = new HashMap<>();
-    Properties prop = new Properties();
-
     public TestGetRequest() {
     }
 
     @BeforeClass
     public void requestSetup() {
         CommonUtil.getPathThroughProperties("apiConfig.properties");
-        this.path = prop.getProperty("userPath");
         queryParameters.put("page",2);
+        path=CommonUtil.getPath("userPath");
         CommonUtil.getBaseURI();
     }
 
     @Test
     public void testGetRequest() {
         RequestSpecification request = RestAssured.given().relaxedHTTPSValidation();
-        Response response = (Response)request.queryParams(queryParameters).request(Method.GET, this.path, new Object[0]);
+        Response response = request.queryParams(queryParameters).get(path);
         int statuscode = response.getStatusCode();
-        System.out.println(statuscode);
-        Assert.assertEquals(200, 200);
+        Assert.assertEquals(statuscode, 200);
     }
 }

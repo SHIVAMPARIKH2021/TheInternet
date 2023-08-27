@@ -11,7 +11,7 @@ import static utility.ResourcePathUtil.currentDirectory;
 public class CommonUtil {
     public static FileInputStream file;
     public static Properties prop;
-    public CommonUtil(String whichPropertyFile) {
+    public static void getPathThroughProperties(String whichPropertyFile) {
         try {
             prop = new Properties();
             file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\" + whichPropertyFile);
@@ -20,10 +20,10 @@ public class CommonUtil {
             e.printStackTrace();
         }
     }
-    public static CommonUtil getPathThroughProperties(String propertyFile) {
-        return new CommonUtil(propertyFile);
-    }
 
+    public static String getPath(String path){
+       return prop.getProperty(path);
+    }
     public static String getBaseURI() {
         return RestAssured.baseURI = "https://reqres.in/";
     }
