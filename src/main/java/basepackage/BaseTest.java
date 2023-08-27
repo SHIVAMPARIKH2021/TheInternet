@@ -1,6 +1,7 @@
 package basepackage;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Properties;
@@ -43,8 +44,14 @@ public class BaseTest {
     protected static WebDriverWait wait;
 
     public BaseTest() {
-        CommonUtil.getPathThroughProperties("configuraton.properties");
-        log.error("Configurations are not found; Restart the process or Check the program");
+        prop = new Properties();
+        try {
+            file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\configuration.properties" );
+            prop.load(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+            log.error("Configurations are not found; Restart the process or Check the program"+""+e);
+        }
     }
 
     private static WebDriver manageDriver() {
