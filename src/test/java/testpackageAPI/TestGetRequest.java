@@ -2,7 +2,6 @@ package testpackageAPI;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.google.gson.JsonArray;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -12,11 +11,7 @@ import org.testng.annotations.Test;
 import testData.GetRequestTestData;
 import utility.CommonUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class TestGetRequest {
     String path;
