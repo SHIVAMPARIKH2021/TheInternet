@@ -3,13 +3,9 @@ package utility;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
-import basepackage.BaseTest;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-
-import static utility.ResourcePathUtil.currentDirectory;
 
 public class Parameterization {
 	
@@ -18,7 +14,7 @@ public class Parameterization {
 	public Object[][] testData(String sheetName) {
 		FileInputStream dataFile=null;
 		try {
-			dataFile = new FileInputStream(currentDirectory+"\\OrangHRMDetails.xlsx");
+			dataFile = new FileInputStream(CommonUtil.currentDirectory+"\\OrangHRMDetails.xlsx");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

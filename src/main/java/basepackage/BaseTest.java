@@ -26,8 +26,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.BaseUtil;
 import utility.CommonUtil;
 
-import static utility.ResourcePathUtil.currentDirectory;
-
 public class BaseTest {
 
     private static FileInputStream file;
@@ -46,7 +44,7 @@ public class BaseTest {
     public BaseTest() {
         prop = new Properties();
         try {
-            file = new FileInputStream(currentDirectory + "\\src\\main\\java\\configurationpackage\\configuration.properties" );
+            file = new FileInputStream(CommonUtil.currentDirectory + "\\src\\main\\java\\configurationpackage\\configuration.properties" );
             prop.load(file);
         } catch (IOException e) {
             e.printStackTrace();

@@ -2,7 +2,6 @@ package dataBaseConnectivity;
 
 import org.apache.log4j.Logger;
 import utility.CommonUtil;
-import utility.ResourcePathUtil;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -49,7 +48,7 @@ abstract class DbAccess {
         dbConstantsList.add(DbConstants.ENCRYPT);
         dbConstantsList.forEach(constant -> {
                     stringBuilder.append(constant.concat("=")
-                            .concat(ResourcePathUtil.readJson(constant,configFile)
+                            .concat(CommonUtil.readJson(constant,configFile)
                                     .concat(";")));
                 }
         );
