@@ -1,0 +1,9 @@
+{
+  "integratedSecurity": "false",
+  "encrypt": "true",
+  "trustServerCertificate": "true",
+  "username":"sa",
+  "password":"sa1234",
+  "databaseName": "AdventureWorks2012"
+}
+
