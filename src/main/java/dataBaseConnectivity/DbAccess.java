@@ -1,21 +1,18 @@
 package dataBaseConnectivity;
 
 import org.apache.log4j.Logger;
+import utility.CommonUtil;
 import utility.ResourcePathUtil;
-
-import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.util.Properties;
-
+import java.util.ArrayList;
 abstract class DbAccess {
     private static Connection connection;
-    private static final Properties properties;
     protected static final Logger log;
+    private static String configFile = "dbConfig.json";
 
     static {
-        properties = new Properties();
         log = Logger.getLogger(DbAccess.class);
     }
 
@@ -41,24 +38,24 @@ abstract class DbAccess {
      * @return jdbc url
      */
     private static String getUrl(String urlKey){
-        String path = "\\src\\main\\java\\configurationpackage\\";
-        try {
-            properties.load(new FileReader(
-    ResourcePathUtil.currentDirectory
-            + path
-            + "application.properties"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        String jdbcUrl =properties.getProperty(urlKey)
-                + ";databaseName=" + properties.getProperty("databaseName")
-                + ";integratedSecurity=" + properties.getProperty("integratedSecurity")
-                + ";encrypt=" + properties.getProperty("encrypt")
-                + ";trustServerCertificate=" + properties.getProperty("trustServerCertificate")
-                + ";username=" + properties.getProperty("username")
-                + ";password=" + properties.getProperty("password");
-        return jdbcUrl;
+        CommonUtil.getPathThroughProperties("application.properties");
+        StringBuilder stringBuilder = new StringBuilder();
+        ArrayList<String> dbConstantsList = new ArrayList<>();
+        dbConstantsList.add(DbConstants.DATABASE_NAME);
+        dbConstantsList.add(DbConstants.USERNAME);
+        dbConstantsList.add(DbConstants.PASSWORD);
+        dbConstantsList.add(DbConstants.TRUST_SERVER_CERTIFICATE);
+        dbConstantsList.add(DbConstants.INTERGRATED_SECURITY);
+        dbConstantsList.add(DbConstants.ENCRYPT);
+        dbConstantsList.forEach(constant -> {
+                    stringBuilder.append(constant.concat("=")
+                            .concat(ResourcePathUtil.readJson(constant,configFile)
+                                    .concat(";")));
+                }
+        );
+        String jdbcUrl = CommonUtil.getPath(urlKey)
+                .concat(stringBuilder.toString());
+        return jdbcUrl.replace("\"", "");
     }
 
     /**
