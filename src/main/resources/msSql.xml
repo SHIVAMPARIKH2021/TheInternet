@@ -1,0 +1,12 @@
+<beans>
+    <bean id="getEmployeeDetails" isResultSet = "true">
+          <query value="select  TOP 10 *
+        from Sales.CreditCard cc
+        where CardType = 'SuperiorCard'"/>
+    </bean>
+    <bean id="getCurrencyCode" isResultSet = "true">
+        <query value="select *
+        from Sales.Currency c
+        where c.CurrencyCode = 'CAD'"/>
+    </bean>
+</beans>

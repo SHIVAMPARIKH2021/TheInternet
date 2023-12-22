@@ -17,3 +17,27 @@
 2023-12-21 03:35:06,998 ERROR [main] DbAccess:35 - Database connectivity has been failed
 2023-12-21 03:47:24,430 ERROR [main] DbAccess:35 - Database connectivity has been failed
 2023-12-21 03:50:20,725 ERROR [main] DbAccess:35 - Database connectivity has been failed
+2023-12-21 18:11:58,020  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:12:09,896  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:12:23,316  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:13:07,272  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:13:41,880  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:14:01,547  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:15:25,172  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:15:37,295  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:16:32,997  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:16:52,231  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:20:37,425  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:21:32,582  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:24:25,349  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:29:18,775  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:30:49,311  INFO [main] CommonUtil:99 - Object for Document is not null
+2023-12-21 18:33:18,436  INFO [main] CommonUtil:98 - Object for Document is not null
+2023-12-21 18:34:09,881  INFO [main] CommonUtil:98 - Object for Document is not null
+2023-12-22 00:53:23,153  INFO [main] DbAccess:58 - Data has been retrieved from database.
+2023-12-22 00:56:25,486  INFO [main] DbAccess:58 - Data has been retrieved from database.
+2023-12-22 00:57:16,860  INFO [main] DbAccess:58 - Data has been retrieved from database.
+2023-12-22 01:04:16,425  INFO [main] DbAccess:58 - Data has been retrieved from database.
+2023-12-22 01:13:57,450  INFO [main] DbAccess:58 - Data has been retrieved from database.
+2023-12-22 01:16:24,247  INFO [main] DbAccess:58 - Data has been retrieved from database.
+2023-12-22 01:16:46,738  INFO [main] DbAccess:58 - Data has been retrieved from database.
