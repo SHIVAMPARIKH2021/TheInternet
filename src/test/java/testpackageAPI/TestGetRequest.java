@@ -2,6 +2,7 @@ package testpackageAPI;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
+import dataBaseConnectivity.Dao;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -11,6 +12,9 @@ import org.testng.annotations.Test;
 import testData.GetRequestTestData;
 import utility.CommonUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.HashMap;
 
 public class TestGetRequest {

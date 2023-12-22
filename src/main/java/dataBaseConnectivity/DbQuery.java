@@ -1,5 +1,7 @@
 package dataBaseConnectivity;
 
+import utility.CommonUtil;
+
 import java.util.Arrays;
 import java.util.List;
 import java.sql.Connection;
@@ -45,28 +47,36 @@ class DbQuery extends DbAccess {
         }
     }
 
-    protected ResultSet readDatabase (String sql,Object...args) {
-        try {
-            if (!connection.isClosed()) {
-                resultSet = prepareQuery(sql, args).executeQuery();
-                log.info("Data has been retrieved from database.");
+    protected ResultSet readDatabase(String fileName, String beanId, Object... args) {
+        if (CommonUtil.isReadOnlyQuery(fileName,beanId)) {
+            String sql = "";
+            try {
+                connection = getConnection("msSqlUrl");
+                if (!connection.isClosed()) {
+                    sql = CommonUtil.getXmlValue("msSql.xml",beanId);
+                    resultSet = prepareQuery(sql, args).executeQuery();
+                    log.info("Data has been retrieved from database.");
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e + "\n" + "Failed to retrieve data from database.");
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e +"\n"+"Failed to retrieve data from database.");
         }
         return resultSet;
     }
 
-    protected int updateDatabase (String sql,Object...args){
-        try {
-            if (!connection.isClosed()) {
-                rows = prepareQuery(sql, args).executeUpdate();
-                log.info(rows + " rows are updated in the database");
+    protected int updateDatabase (String fileName, String beanId,Object...args) {
+        if (!CommonUtil.isReadOnlyQuery(fileName, beanId)) {
+            String sql = "";
+            try {
+                if (!connection.isClosed()) {
+                    sql = CommonUtil.getXmlValue("msSql.xml", beanId);
+                    rows = prepareQuery(sql, args).executeUpdate();
+                    log.info(rows + " rows are updated in the database");
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e + "\n" + "Failed to perform operation on database.");
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e +"\n"+"Failed to perform operation on database.");
         }
         return rows;
     }
-
 }
